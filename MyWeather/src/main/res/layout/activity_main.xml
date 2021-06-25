@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/night">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editetext"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+
+
+            android:background="@drawable/border"
+            android:hint="Enter the city name"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <ImageView
+
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_search_24"
+            android:id="@+id/search"
+            android:background="@drawable/border"
+            android:layout_marginRight="10dp"
+
+            />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="#eee"
+                android:textSize="19dp"
+                android:text="Country : City "
+                android:id="@+id/city"
+                android:layout_marginTop="90dp" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="#eee"
+                android:textSize="19dp"
+                android:text="Time"
+                android:id="@+id/time1"
+                android:layout_marginTop="130dp" />
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/search"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:id="@+id/imagebutton"
+                tools:ignore="NotSibling"
+                android:src="@drawable/logo"
+                android:background="@drawable/night"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="270dp"
+                android:text="Tempreture"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/tempreture"
+                android:background="@drawable/border2"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_below="@id/tempreture"
+                android:layout_marginTop="20dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/night">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/border2">
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Min Tempreture"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:gravity="center"
+                                android:id="@+id/mintempreture"/>
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="50dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Max Tempreture"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:gravity="center"
+                                android:id="@+id/maxtempreture"/>
+
+                        </RelativeLayout>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="300dp"
+                        android:textColor="@color/white"
+                        android:text="Longitude"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="330dp"
+                        android:textColor="@color/white"
+                        android:text="Latitude"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="360dp"
+
+                        android:textColor="@color/white"
+                        android:text="Humidity"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="390dp"
+
+                        android:textColor="@color/white"
+                        android:text="Sunrise"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="420dp"
+
+                        android:textColor="@color/white"
+                        android:text="Sunset"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="450dp"
+
+                        android:textColor="@color/white"
+                        android:text="Pressure"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="480dp"
+
+                        android:textColor="@color/white"
+                        android:text="Wind"
+                        android:textSize="20dp"
+                        />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="300dp"
+                        android:textColor="@color/white"
+                        android:text="Longitude"
+                        android:layout_marginLeft="150dp"
+                        android:textSize="20dp"
+                        android:id="@+id/longitude"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="330dp"
+                        android:layout_marginLeft="150dp"
+                        android:textColor="@color/white"
+                        android:text="Latitude"
+                        android:textSize="20dp"
+                        android:id="@+id/latitude"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="360dp"
+
+                        android:textColor="@color/white"
+                        android:text="Humidity"
+                        android:textSize="20dp"
+                        android:id="@+id/humidity"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="390dp"
+                        android:layout_marginLeft="150dp"
+
+                        android:textColor="@color/white"
+                        android:text="Sunrise"
+                        android:textSize="20dp"
+                        android:id="@+id/sunrise"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="420dp"
+
+                        android:textColor="@color/white"
+                        android:text="Sunset"
+                        android:textSize="20dp"
+                        android:id="@+id/sunset"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="450dp"
+                        android:layout_marginLeft="150dp"
+
+                        android:textColor="@color/white"
+                        android:text="Pressure"
+                        android:textSize="20dp"
+                        android:id="@+id/pressure"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="480dp"
+
+                        android:textColor="@color/white"
+                        android:text="Wind"
+                        android:textSize="20dp"
+                        android:id="@+id/wind" />
+                    </RelativeLayout>
+
+
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
+
